@@ -6,17 +6,17 @@ Group Members:
 4. Muhammad Firdaus bin Shahrum         - 2013803
 5. Muhammad Amir Hamzah bin Abdul Aziz  - 2011685
 
-## Project Title
+## 1.0 Project Title
 
-## Introduction
+## 2.0 Introduction
 
-## Objectives
+## 3.0 Objectives
 
-## Contents
+## 4.0 Contents
 
-### Student & Runner
+### 4.1 Student & Runner
 
-### Car Rental
+### 4.2 Car Rental
 
 ### Transportation
 1) Features and functionality: 
@@ -40,9 +40,9 @@ Group Members:
 5) Model definition:   
       * This model stores all the transportation requests made by the user. Students will have to insert the details of their booking such as from, the destination,           the number of passengers and the time of pickup. Then, a new transportation order object will be created with all the details inserted by the student. The only         detail that is yet to be filled is the driver attribute. As a runner, user can browse a list of all available requests made by the students. Runners have the           option to accept any one or none of the requests. Upon accepting, the controller will update the request by inserting the runner's name into the request and           remove it from the list.
 
-### Food Delivery
+### 4.3 Food Delivery
 
-### Parcel Delivery
+### 4.4 Parcel Delivery
 1) Features and functionality: 
       1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
       2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
@@ -62,11 +62,11 @@ Group Members:
 5) Model definition:   
       * The purpose of this model is to store the parcel details for all existing students inside the databases. Students can keep updated with their parcel status all the time using the website. If the parcel arrived, students can use the runner services by requesting through the website. Runner will receive the request and can decide which request favors them the most.
 
-### Entity Relationship Diagram (ERD) 
+### 5.0 Entity Relationship Diagram (ERD) 
 
 ![Group 4 WAD drawio (1)](https://user-images.githubusercontent.com/104126603/170876437-43737a8e-262d-4cd8-a3ca-20f953e3c888.png)
 
-### Sequence Diagrams
+### 6.0 Sequence Diagrams
 1. Users
 
 2. Transportation
@@ -77,6 +77,6 @@ Group Members:
 4. Parcel
 
 5. Rent
-### References (if any)
+### 7.0 References (if any)
 
 
