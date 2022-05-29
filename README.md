@@ -16,9 +16,9 @@ Members:
 
 ## Functions
 
-### Student
+### Student & Runner
 
-### Runner
+### Car Rental
 
 ### Transportation
 
