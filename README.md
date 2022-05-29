@@ -13,8 +13,6 @@ Group Members:
 ## Objectives
 
 
-## Functions
-
 ### Student & Runner
 
 ### Car Rental
@@ -24,3 +22,8 @@ Group Members:
 ### Food Delivery
 
 ### Parcel Delivery
+1) Features and functionality:
+2) Views
+3) Controllers:
+4) routing
+5) model definition:
