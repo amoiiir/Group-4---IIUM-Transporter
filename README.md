@@ -29,10 +29,10 @@ Group Members:
       3. acceptRequest (Runner) - Runner can accept any order comming from student
   
 2) Views: (KIV)
-      * enterDetails.blade.php
-      * layouts
+      1. enterDetails.blade.php
+      2. layouts
             * master.blade.php (?) - tak sure
-      * requestRunner.blade.php - 
+      3. requestRunner.blade.php - 
 
 3) Controllers: 
       * parcelController - can be use to store, update or destroy parcel details in database
