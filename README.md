@@ -19,6 +19,26 @@ Group Members:
 ### Car Rental
 
 ### Transportation
+1) Features and functionality: 
+      1. Request for pickup (Student) - Student enters their destination details such as from, to, number of passengers and the time of pickup.
+      2. Accept Pickup (Runner) - Runner can view the details of all transportaion requests and accept any.
+      3. Cancel Request - Student can cancel their request for pickup as long as no runner have accepted the request.
+  
+2) Views: (KIV)
+      1. requestPickup.blade.php
+      2. layouts
+            - master.blade.php
+      3. acceptPickup.blade.php
+      4. cancelRequest.blade.php
+
+3) Controllers: 
+      * transportationController - create, read, update, delete the transportation requests in the database.
+
+4) Routing:
+      * web.php - navigate through the pages 
+      
+5) Model definition:   
+      * This model stores all the transportation requests made by the user. Students will have to insert the details of their booking such as from, the destination,           the number of passengers and the time of pickup. Then, a new transportation order object will be created with all the details inserted by the student. The only         detail that is yet to be filled is the driver attribute. As a runner, user can browse a list of all available requests made by the students. Runners have the           option to accept any one or none of the requests. Upon accepting, the controller will update the request by inserting the runner's name into the request and           remove it from the list.
 
 ### Food Delivery
 
@@ -44,8 +64,19 @@ Group Members:
 
 ### Entity Relationship Diagram (ERD) 
 
-### Sequence Diagrams
+![Group 4 WAD drawio (1)](https://user-images.githubusercontent.com/104126603/170876437-43737a8e-262d-4cd8-a3ca-20f953e3c888.png)
 
+### Sequence Diagrams
+1. Users
+
+2. Transportation
+      ![Group 4 WAD-Page-2 drawio](https://user-images.githubusercontent.com/104126603/170878191-02da8f1a-908e-49cc-939a-eebb8af5e0c5.png)
+
+3. Food
+
+4. Parcel
+
+5. Rent
 ### References (if any)
 
 
