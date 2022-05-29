@@ -41,3 +41,9 @@ Group Members:
       * web.php - navigate through the pages 
 5) model definition:   
       * The purpose of this model is to store the parcel details for all existing students inside the databases. Students can keep updated with their parcel status all the time using the website. If the parcel arrived, students can use the runner services by requesting through the website. Runner will receive the request and can decide which request favors them the most.
+
+### Entity Relationship Diagram (ERD) 
+
+### References (if any)
+
+### Sequence Diagrams
