@@ -11,8 +11,16 @@ Group Members:
 TransportIIUM - IIUM Runner Service System
 
 ## 2.0 Introduction
+There are many services available nowadays, particularly with the availability of online websites where people can simply type in their request without having to contact the service provider directly. The services provided range from the most complex to the most simple tasks. These services are especially important for those who are looking for part-time work to supplement their income.
+      Similarly, students at IIUM provide a variety of services, including picking up parcels, renting cars, delivering food, and serving as a transporter. However, other students who want to use these services must join a Whatsapp or Telegram group or communicate directly with each of these service providers, which can be inconvenient at times, especially if it is their first time using these services. As a result, this project, TransportIIUM, is proposed to develop a web application that will help in centralising the services available at IIUM, reducing the hassle for students in obtaining the services they require.
 
 ## 3.0 Objectives
+The following objectives have been proposed for this project:
+      i. To centralize the services available at IIUM.
+      ii. To make it easier for IIUM students to request a transporter.
+      iii. To help in the quick and efficient delivery of food.
+      iv. To establish a system for picking up parcels requested by IIUM students that is easy to use.
+      v. To provide an easy-to-use platform for the IIUM community to rent a car.
 
 ## 4.0 Contents
 
