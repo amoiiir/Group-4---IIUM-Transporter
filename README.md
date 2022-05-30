@@ -26,7 +26,7 @@ TransportIIUM - IIUM Runner Service System
       2. Accept Pickup (Runner) - Runner can view the details of all transportaion requests and accept any.
       3. Cancel Request - Student can cancel their request for pickup as long as no runner have accepted the request.
   
-2) Views: (KIV)
+2) Views: 
       1. requestPickup.blade.php
       2. layouts
             - master.blade.php
@@ -48,7 +48,7 @@ TransportIIUM - IIUM Runner Service System
       2. Accept order (Runner) - Runner can view the details of all food order requests and accept any.
       3. Cancel Request - Student can cancel their request for food as long as no runner have accepted the request.
   
-2) Views: (KIV)
+2) Views: 
       1. orderFood.blade.php
       2. layouts
             - master.blade.php
@@ -69,14 +69,14 @@ TransportIIUM - IIUM Runner Service System
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
-      2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
-      3. acceptRequest (Runner) - Runner can accept any order comming from student
+      1. Enter parcel Details (Student) - Student enter their tracking number parcel in the parcel delivery form
+      2. Student request for runner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
+      3. Accept request from student (Runner) - Runner can accept any order comming from student
   
-2) Views: (KIV)
+2) Views: 
       1. enterDetails.blade.php
       2. layouts
-            * master.blade.php (?) - tak sure
+            * master.blade.php
       3. requestRunner.blade.php - 
 
 3) Controllers: 
