@@ -18,7 +18,7 @@ Group Members:
 
 ### 4.2 Car Rental
 
-### Transportation
+### 4.3 Transportation
 1) Features and functionality: 
       1. Request for pickup (Student) - Student enters their destination details such as from, to, number of passengers and the time of pickup.
       2. Accept Pickup (Runner) - Runner can view the details of all transportaion requests and accept any.
@@ -40,9 +40,9 @@ Group Members:
 5) Model definition:   
       * This model stores all the transportation requests made by the user. Students will have to insert the details of their booking such as from, the destination,           the number of passengers and the time of pickup. Then, a new transportation order object will be created with all the details inserted by the student. The only         detail that is yet to be filled is the driver attribute. As a runner, user can browse a list of all available requests made by the students. Runners have the           option to accept any one or none of the requests. Upon accepting, the controller will update the request by inserting the runner's name into the request and           remove it from the list.
 
-### 4.3 Food Delivery
+### 4.4 Food Delivery
 
-### 4.4 Parcel Delivery
+### 4.5 Parcel Delivery
 1) Features and functionality: 
       1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
       2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
