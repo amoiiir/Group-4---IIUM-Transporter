@@ -22,12 +22,11 @@ Group Members:
       4. Login - Users login with their matric number and password.
       
 2) Views: (KIV)
-      1. userType.blade.php
-      2. registerStudent.blade.php
-      3. registerRunner.blade.php
-      4. login.blade.php
-      5. verify.blade.php
-      6. layouts
+      1. registerStudent.blade.php
+      2. registerRunner.blade.php
+      3. login.blade.php
+      4. verify.blade.php
+      5. layouts
             - master.blade.php
 
 3) Controller:
