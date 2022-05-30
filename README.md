@@ -107,7 +107,7 @@ TransportIIUM - IIUM Runner Service System
 3. Food
 
 4. Parcel
-      ![Group 4 WAD-Page-3 drawio]
+      ![Group 4 WAD-parcelSequenceDiagram drawio](https://user-images.githubusercontent.com/101052053/171030328-33e695b1-7198-4eac-b7ca-d5b5d66acc96.png)
 
 
 5. Rent
