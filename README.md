@@ -69,7 +69,7 @@ TransportIIUM - IIUM Runner Service System
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. Enter parcel Details (Student) - Student enter their details in the enterDetails.php form like matric number, parcel ID, from, to and specify the item.
+      1. Enter parcel Details (Student) - Student enter their details in the enterDetails.php form like parcel ID, from, to and specify the item.
       2. Student request for runner (Student) - Student can request for runner available in the system as soon as they click the submit button.
       3. View input details (Student) - Details of the student will be shown including the charges they are required to pay for the services.
       4. Accept request from student (Runner) - Runner can accept any order coming from student through the system.
