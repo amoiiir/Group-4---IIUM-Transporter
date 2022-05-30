@@ -69,21 +69,27 @@ TransportIIUM - IIUM Runner Service System
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. Enter parcel Details (Student) - Student enter their tracking number parcel in the parcel delivery form
-      2. Student request for runner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
-      3. Accept request from student (Runner) - Runner can accept any order comming from student
+      1. Enter parcel Details (Student) - Student enter their details in the enterDetails.php form like matric number, parcel ID, from, to and specify the item.
+      2. Student request for runner (Student) - Student can request for runner available in the system as soon as they click the submit button.
+      3. View input details (Student) - Details of the student will be shown including the charges they are required to pay for the services.
+      4. Accept request from student (Runner) - Runner can accept any order coming from student through the system.
   
 2) Views: 
       1. enterDetails.blade.php
-      2. layouts
+      2. myDetails.blade.php
+      3. layouts
             * master.blade.php
-      3. requestRunner.blade.php - 
+      4. runnerView.blade.php 
 
 3) Controllers: 
       * parcelController - can be use to store, update or destroy parcel details in database
 
 4) Routing:
       * web.php - navigate through the pages 
+      * /enterDetails.php - direct the user to the enterDetails.blade.php
+      * /myDetails - direct the user to the myDetails.blade.php
+      * /runnerView.php - direct the user to the runnerView.blade.php
+
 5) Model definition:   
       * The purpose of this model is for students to request existing runner to deliver their parcels directly to them. Users are required to enter their parcelID(tracking number), From (the current location of the parcel), To (The location of the owner) and specify the item. After submitting the form, user will be notify if there is runner to pick up their parcels and it will display all the details inserted by the user from the previous form with the charges.
 
