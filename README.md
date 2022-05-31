@@ -65,7 +65,7 @@ The following objectives have been proposed for this project:
       4. cancelBooking.blade.php
       
 3) Controllers: 
-      * transportationController - create, read, update, delete the transportation requests in the database.
+      * rentalController - create, read, update, delete the transportation requests in the database.
 
 4) Routing:
       * web.php - navigate through the pages 
