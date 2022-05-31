@@ -113,7 +113,9 @@ The following objectives have been proposed for this project:
       * foodOrderController - to create, read, update, delete the food delivery requests in the database.
 
 4) Routing:
-      * web.php - navigate through the pages
+      * /orderfood - directs the user to orderFood.blade.php (only if the user type is 'student')
+      * /myorders - directs the user to myOrders.blade.php (only if the user type is 'student')
+      * /acceptorder - directs the user to acceptOrder.blade.php (only if the user type is 'runner')
       
 5) Model definition:   
       * This model stores all the food delivery requests made by the student. As student, users can create an order for food delivery by filling in the particulars             such as delivery address, vendor and food. After that, the foodOrderController will create a new foodOrder object. The controller will then shows the list of           orders that are yet to be accepted by any runner in the acceptOrder page. This is done by checking the "runnerID" property in the object. Upon accepting, the           runner's name will be inserted into the variable and the order will be removed from the list.
@@ -156,13 +158,13 @@ The following objectives have been proposed for this project:
 2. Transportation
       ![Group 4 WAD-Page-2 drawio](https://user-images.githubusercontent.com/104126603/170878191-02da8f1a-908e-49cc-939a-eebb8af5e0c5.png)
 
-3. Food  
+3. Food Delivery 
       ![Group 4 WAD-food delivery drawio](https://user-images.githubusercontent.com/84954462/171091872-3720d011-24c5-4858-a49b-6a04780d0ca3.png)
 
-4. Parcel
+4. Parcel Delivery
       ![Group 4 WAD-parcelSequenceDiagram drawio](https://user-images.githubusercontent.com/101052053/171030328-33e695b1-7198-4eac-b7ca-d5b5d66acc96.png)  
       
-5. Rent
+5. Car Rental
       ![Group 4 WAD-carRental drawio](https://user-images.githubusercontent.com/104127503/171079408-2e7dc833-151e-426c-bb7c-363e99efd154.png)
 
 ### 7.0 References (if any)
