@@ -44,7 +44,9 @@ The following objectives have been proposed for this project:
       * registrationController - create and update users' personal details
 
 4) Routing:
-      * web.php - navigate through the pages
+      * /registerStudent - directs the user to registerStudent.blade.php (Student)
+      * /registerRunner  - directs the user to registerRunner.blade.php (Runner)
+      * /login           - directs the user to login.blade.php (Student and Runner)
 
 5) Model definition:
       * This model shows that the users need to choose between Student or Runner to use this web application. Then, users need to fill in their personal details in 
