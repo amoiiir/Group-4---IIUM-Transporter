@@ -7,10 +7,21 @@ Group Members:
 5. Muhammad Amir Hamzah bin Abdul Aziz  - 2011685
 
 ## 1.0 Project Title
+TransportIIUM - IIUM Runner Service System
 
 ## 2.0 Introduction
+There are many services available nowadays, particularly with the availability of online websites where people can simply type in their request without having to contact the service provider directly. The services provided range from the most complex to the most simple tasks. These services are especially important for those who are looking for part-time work to supplement their income.  
+
+Similarly, students at IIUM provide a variety of services, including picking up parcels, renting cars, delivering food, and serving as a transporter. However, other students who want to use these services must join a Whatsapp or Telegram group or communicate directly with each of these service providers, which can be inconvenient at times, especially if it is their first time using these services. As a result, this project, TransportIIUM, is proposed to develop a web application that will help in centralising the services available at IIUM, reducing the hassle for students in obtaining the services they require.
 
 ## 3.0 Objectives
+The following objectives have been proposed for this project:
+1. To centralize the services available at IIUM.
+2.  To make it easier for IIUM students to request a transporter.
+3.  To help in the quick and efficient delivery of food.
+4.  To establish a system for picking up parcels requested by IIUM students that is easy to use.
+5.  To provide an easy-to-use platform for the IIUM community to rent a car.
+
 
 ## 4.0 Contents
 
@@ -86,6 +97,28 @@ Group Members:
       * This model stores all the transportation requests made by the user. Students will have to insert the details of their booking such as from, the destination,           the number of passengers and the time of pickup. Then, a new transportation order object will be created with all the details inserted by the student. The only         detail that is yet to be filled is the driver attribute. As a runner, user can browse a list of all available requests made by the students. Runners have the           option to accept any one or none of the requests. Upon accepting, the controller will update the request by inserting the runner's name into the request and           remove it from the list.
 
 ### 4.4 Food Delivery
+1) Features and functionality: 
+      1. Order food (Student) - Student enters their order details such as delivery address, vendor and what food do they want.
+      2. Accept order (Runner) - Runner can view the details of all food order requests and accept any.
+      3. Cancel Request - Student can cancel their request for food as long as no runner have accepted the request.
+  
+2) Views: 
+      1. orderFood.blade.php
+      2. layouts
+            - master.blade.php
+      3. acceptOrder.blade.php
+      4. myOrders.blade.php
+
+3) Controllers: 
+      * foodOrderController - create, read, update, delete the food delivery requests in the database.
+
+4) Routing:
+      * /orderfood - directs the user to orderFood.blade.php
+      * /myorders - directs the user to myOrders.blade.php
+      * /acceptorder - directs the user to acceptOrder.blade.php
+      
+5) Model definition:   
+      * This model stores all the food delivery requests made by the student. As student, users can create an order for food delivery by filling in the particulars             such as delivery address, vendor and food. After that, the foodOrderController will create a new foodOrder object. The controller will then shows the list of           orders that are yet to be accepted by any runner in the acceptOrder page. This is done by checking the "runnerID" property in the object. Upon accepting, the           runner's name will be inserted into the variable and the order will be removed from the list.
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
@@ -122,7 +155,7 @@ Group Members:
 3. Food
 
 4. Parcel
-
+       ![Group 4 WAD-parcelSequenceDiagram drawio](https://user-images.githubusercontent.com/101052053/171030328-33e695b1-7198-4eac-b7ca-d5b5d66acc96.png)
 5. Rent
       ![Group 4 WAD-carRental drawio](https://user-images.githubusercontent.com/104127503/171079408-2e7dc833-151e-426c-bb7c-363e99efd154.png)
 
