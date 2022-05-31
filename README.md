@@ -21,7 +21,7 @@ Group Members:
       3. Register (Runner) - Runners enter their personal details into the registration form.
       4. Login - Users login with their matric number and password.
       
-2) Views: (KIV)
+2) Views: 
       1. registerStudent.blade.php
       2. registerRunner.blade.php
       3. login.blade.php
@@ -68,21 +68,27 @@ Group Members:
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
-      2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
-      3. acceptRequest (Runner) - Runner can accept any order comming from student
+      1. Student enter details through form (Student) - Students enter their details in the enter details form in order to request for a runner.
+      2. student can request for a runner (Student) - User can request for a runner right after they click submit button
+      3. review my details (Student) - Student will be directed to my details page to see their input values, and it will display charge 
+      4. runnerView (Runner) - Runner can view any request coming from student through runner view page
   
-2) Views: (KIV)
+2) Views: 
       1. enterDetails.blade.php
-      2. layouts
-            * master.blade.php (?) - tak sure
-      3. requestRunner.blade.php - 
+      2. myDetails.blade.php
+      3. layouts
+            * master.blade.php
+      4. viewRunner.blade.php - 
 
 3) Controllers: 
       * parcelController - can be use to store, update or destroy parcel details in database
 
 4) Routing:
       * web.php - navigate through the pages 
+      * /viewRunner - directs runner to the viewRunner.blade.php page
+      * /enterDetails - directs student to the enterDetails.blade.php page
+      * /myDetails - direct student to the myDetails.blade.php page
+
 5) Model definition:   
       * The purpose of this model is for students to request existing runner to deliver their parcels directly to them. Users are required to enter their parcelID(tracking number), From (the current location of the parcel), To (The location of the owner) and specify the item. After submitting the form, user will be notify if there is runner to pick up their parcels and it will display all the details inserted by the user from the previous form with the charges.
 
