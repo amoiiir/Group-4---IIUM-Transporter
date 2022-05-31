@@ -93,7 +93,7 @@ The following objectives have been proposed for this project:
 4) Routing:
       * /requestPickup - directs the user to requestPickup.blade.php (student)
       * /cancelRequest - directs the user to cancelRequest.blade.php (student)
-      * /acceptPickup - direscts the user to acceptPickup.blade.php (runner)
+      * /acceptPickup - directs the user to acceptPickup.blade.php (runner)
       
 5) Model definition:   
       * This model stores all the transportation requests made by the user. Students will have to insert the details of their booking such as from, the destination,           the number of passengers and the time of pickup. Then, a new transportation order object will be created with all the details inserted by the student. The only         detail that is yet to be filled is the driver attribute. As a runner, user can browse a list of all available requests made by the students. Runners have the           option to accept any one or none of the requests. Upon accepting, the controller will update the request by inserting the runner's name into the request and           remove it from the list.
