@@ -129,7 +129,7 @@ The following objectives have been proposed for this project:
       1. enterDetails.blade.php
       2. myDetails.blade.php
       3. layouts
-            * master.blade.php (?) 
+            * master.blade.php 
       4. runnerView.blade.php 
 
 3) Controllers: 
