@@ -50,8 +50,8 @@ Group Members:
       1. car.blade.php
       2. layouts
             - master.blade.php
-      3. carDetails.blade.php
-      4. runnerAccept.blade.php
+      3. runnerAccept.blade.php
+      4. cancelBooking.blade.php
       
 3) Controllers: 
       * transportationController - create, read, update, delete the transportation requests in the database.
@@ -110,7 +110,8 @@ Group Members:
 
 ### 5.0 Entity Relationship Diagram (ERD) 
 
-      ![Group 4 WAD-Page-1 drawio (1)](https://user-images.githubusercontent.com/104127503/171079440-1f618e53-299c-4fe8-b16a-0221da925115.png)
+![Group 4 WAD-Page-1 drawio (1)](https://user-images.githubusercontent.com/104127503/171080192-41db444c-7a7b-41e4-92d2-cbcf11ec3643.png)
+
 
 ### 6.0 Sequence Diagrams
 1. Users
