@@ -121,20 +121,25 @@ The following objectives have been proposed for this project:
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
       1. Student enter their parcel details (Student) - Student enter their parcel details like parcelID, from, to and item in the parcel delivery form
-      2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
-      3. acceptRequest (Runner) - Runner can accept any order comming from student
+      2. Student request for delivery runner (Student) - Student can request for runner after they submited the form.
+      3. Review user details (Student) - Student can review their input values in this page and it will display the charge as well. 
+      4. Runner view request  (Runner) - Runner can view all the details they required and choose any existing request for delivery.
   
-2) Views: (KIV)
+2) Views: 
       1. enterDetails.blade.php
-      2. layouts
-            * master.blade.php (?) - tak sure
-      3. requestRunner.blade.php - 
+      2. myDetails.blade.php
+      3. layouts
+            * master.blade.php (?) 
+      4. runnerView.blade.php 
 
 3) Controllers: 
       * parcelController - can be use to store, update or destroy parcel details in database
 
 4) Routing:
       * web.php - navigate through the pages 
+      * /enterDetails - directs user to the enterDetails.blade.php
+      * /myDetails - directs user to the myDetails.blade.php
+      * /runnerView - directs user to the runnerView.blade.php
 
 5) Model definition:   
       * The purpose of this model is for students to request existing runner to deliver their parcels directly to them. Users are required to enter their parcelID(tracking number), From (the current location of the parcel), To (The location of the owner) and specify the item. After submitting the form, user will be notify if there is runner to pick up their parcels and it will display all the details inserted by the user from the previous form with the charges.
