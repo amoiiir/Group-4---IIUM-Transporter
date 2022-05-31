@@ -105,6 +105,8 @@ Group Members:
 3. Food
 
 4. Parcel
+      ![Group 4 WAD-parcelSequenceDiagram drawio](https://user-images.githubusercontent.com/101052053/171076988-357d8acb-c426-46fe-9b56-18da16275fa0.png)
+
       
 5. Rent
 ### 7.0 References (if any)
