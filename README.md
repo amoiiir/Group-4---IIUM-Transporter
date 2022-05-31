@@ -145,7 +145,6 @@ The following objectives have been proposed for this project:
       * parcelController - use to implement CRUD (Create, Read, Update and Delete) parcel details in the database
 
 4) Routing:
-      * web.php - navigate through the pages 
       * /enterDetails - directs user to the enterDetails.blade.php
       * /myDetails - directs user to the myDetails.blade.php
       * /runnerView - directs user to the runnerView.blade.php
