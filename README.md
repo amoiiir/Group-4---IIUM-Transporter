@@ -32,7 +32,7 @@ The following objectives have been proposed for this project:
       3. Register (Runner) - Runners enter their personal details into the registration form.
       4. Login - Users login with their matric number and password.
       
-2) Views: (KIV)
+2) Views: 
       1. registerStudent.blade.php
       2. registerRunner.blade.php
       3. login.blade.php
@@ -57,7 +57,7 @@ The following objectives have been proposed for this project:
       2. Accept request (Runner)- Runner need to accept the booking first
       3. Cancel booking (Student) - Student can cancel order before runner accept the booking
       
-2) Views: (KIV)
+2) Views: 
       1. car.blade.php
       2. layouts
             - master.blade.php
@@ -80,7 +80,7 @@ The following objectives have been proposed for this project:
       2. Accept Pickup (Runner) - Runner can view the details of all transportaion requests and accept any.
       3. Cancel Request - Student can cancel their request for pickup as long as no runner have accepted the request.
   
-2) Views: (KIV)
+2) Views: 
       1. requestPickup.blade.php
       2. layouts
             - master.blade.php
@@ -122,7 +122,7 @@ The following objectives have been proposed for this project:
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
+      1. Student enter their parcel details (Student) - Student enter their parcel details like parcelID, from, to and item in the parcel delivery form
       2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
       3. acceptRequest (Runner) - Runner can accept any order comming from student
   
