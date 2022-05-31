@@ -145,8 +145,8 @@ The following objectives have been proposed for this project:
 
 
 ### 6.0 Sequence Diagrams
-1. Users  
-      ![Group 4 WAD-users drawio](https://user-images.githubusercontent.com/84954462/171092555-8f2145e2-4567-4af3-af05-82a7ef3ec8e5.png)
+1. Users 
+      ![Group 4 WAD-users drawio](https://user-images.githubusercontent.com/75491091/171093823-635f05ec-3f23-439e-9cf9-1fe781e2350d.png)
 
 2. Transportation
       ![Group 4 WAD-Page-2 drawio](https://user-images.githubusercontent.com/104126603/170878191-02da8f1a-908e-49cc-939a-eebb8af5e0c5.png)
