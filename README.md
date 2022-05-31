@@ -21,7 +21,7 @@ Group Members:
       3. Register (Runner) - Runners enter their personal details into the registration form.
       4. Login - Users login with their matric number and password.
       
-2) Views: 
+2) Views: (KIV)
       1. registerStudent.blade.php
       2. registerRunner.blade.php
       3. login.blade.php
@@ -41,6 +41,27 @@ Group Members:
         are needed so that the users can login only with Matric Number and Password.
 
 ### 4.2 Car Rental
+1) Features and functionality: 
+      1. Request car rental (Student) - Student enter the details to book a car from runner
+      2. Accept request (Runner)- Runner need to accept the booking first
+      3. Cancel booking (Student) - Student can cancel order before runner accept the booking
+      
+2) Views: (KIV)
+      1. car.blade.php
+      2. layouts
+            - master.blade.php
+      3. carDetails.blade.php
+      4. runnerAccept.blade.php
+      
+3) Controllers: 
+      * transportationController - create, read, update, delete the transportation requests in the database.
+
+4) Routing:
+      * web.php - navigate through the pages 
+      
+5) Model definition:   
+      * This model for car rental among iium student. Student need to fill in all the required details such as date, the time pick up and the type of cars and it will         nagivate to next page for runner to accept the booking. Student also can cancel booking by delete order before the runner accept the booking. As a runner, only 
+        can accept the booking not delete or decline the booking.
 
 ### 4.3 Transportation
 1) Features and functionality: 
@@ -68,33 +89,28 @@ Group Members:
 
 ### 4.5 Parcel Delivery
 1) Features and functionality: 
-      1. Student enter details through form (Student) - Students enter their details in the enter details form in order to request for a runner.
-      2. student can request for a runner (Student) - User can request for a runner right after they click submit button
-      3. review my details (Student) - Student will be directed to my details page to see their input values, and it will display charge 
-      4. runnerView (Runner) - Runner can view any request coming from student through runner view page
+      1. enterDetails (Student) - Student enter their tracking number parcel in the parcel delivery form
+      2. requestRunner (Student) - User can see their order status. If their parcel arrived, they can choose to request for a runner.
+      3. acceptRequest (Runner) - Runner can accept any order comming from student
   
-2) Views: 
+2) Views: (KIV)
       1. enterDetails.blade.php
-      2. myDetails.blade.php
-      3. layouts
-            * master.blade.php
-      4. viewRunner.blade.php - 
+      2. layouts
+            * master.blade.php (?) - tak sure
+      3. requestRunner.blade.php - 
 
 3) Controllers: 
       * parcelController - can be use to store, update or destroy parcel details in database
 
 4) Routing:
       * web.php - navigate through the pages 
-      * /viewRunner - directs runner to the viewRunner.blade.php page
-      * /enterDetails - directs student to the enterDetails.blade.php page
-      * /myDetails - direct student to the myDetails.blade.php page
 
 5) Model definition:   
       * The purpose of this model is for students to request existing runner to deliver their parcels directly to them. Users are required to enter their parcelID(tracking number), From (the current location of the parcel), To (The location of the owner) and specify the item. After submitting the form, user will be notify if there is runner to pick up their parcels and it will display all the details inserted by the user from the previous form with the charges.
 
 ### 5.0 Entity Relationship Diagram (ERD) 
 
-![Group 4 WAD drawio (1)](https://user-images.githubusercontent.com/104126603/170876437-43737a8e-262d-4cd8-a3ca-20f953e3c888.png)
+      ![Group 4 WAD-Page-1 drawio (1)](https://user-images.githubusercontent.com/104127503/171079440-1f618e53-299c-4fe8-b16a-0221da925115.png)
 
 ### 6.0 Sequence Diagrams
 1. Users
@@ -105,10 +121,10 @@ Group Members:
 3. Food
 
 4. Parcel
-      ![Group 4 WAD-parcelSequenceDiagram drawio](https://user-images.githubusercontent.com/101052053/171076988-357d8acb-c426-46fe-9b56-18da16275fa0.png)
 
-      
 5. Rent
+      ![Group 4 WAD-carRental drawio](https://user-images.githubusercontent.com/104127503/171079408-2e7dc833-151e-426c-bb7c-363e99efd154.png)
+
 ### 7.0 References (if any)
 
 
