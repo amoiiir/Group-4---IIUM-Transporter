@@ -135,7 +135,7 @@ The following objectives have been proposed for this project:
       4. runnerView.blade.php 
 
 3) Controllers: 
-      * parcelController - can be use to store, update or destroy parcel details in database
+      * parcelController - use to implement CRUD (Create, Read, Update and Delete) parcel details in the database
 
 4) Routing:
       * web.php - navigate through the pages 
