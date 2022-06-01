@@ -73,7 +73,9 @@ The following objectives have been proposed for this project:
       * rentalController - create, read, update, delete the transportation requests in the database.
 
 4) Routing:
-      * web.php - navigate through the pages 
+      * /car - directs the user to car.blade.php (student)
+      * /runnerAccept - directs the user to runnerAccept.blade.php (runner)
+      * /cancelBooking - directs the user to cancelBooking.blade.php (student)
       
 5) Model definition:   
       * This model for car rental among iium student. Student need to fill in all the required details such as date, the time pick up and the type of cars and it will         nagivate to next page for runner to accept the booking. Student also can cancel booking by delete order before the runner accept the booking. As a runner, only 
