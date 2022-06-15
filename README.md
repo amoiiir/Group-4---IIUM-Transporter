@@ -28,33 +28,20 @@ The following objectives have been proposed for this project:
 
 ## 4.0 Contents
 
-### 4.1 Student & Runner
+### 4.1 Users
 1) Features and functionality:
-      1. Choose user type - User choose between Student or Runner.
-      2. Register (Student) - Students enter their personal details into the registration form.
-      3. Register (Runner) - Runners enter their personal details into the registration form.
-      4. Login - Users login with their matric number and password.
+      1. Register - Users enter their personal details into the registration form.
+      2. Login - Users login with their email and password.
       
 2) Views: 
-      1. registerStudent.blade.php
-      2. registerRunner.blade.php
+      1. welcome.blade.php
+      2. register.blade.php
       3. login.blade.php
-      4. verify.blade.php
-      5. layouts
-            - master.blade.php
-
-3) Controller:
-      * registrationController - create and update users' personal details
-
-4) Routing:
-      * /registerStudent - directs the user to registerStudent.blade.php (Student)
-      * /registerRunner  - directs the user to registerRunner.blade.php (Runner)
-      * /login           - directs the user to login.blade.php (Student and Runner)
+      4. dashboard.blade.php
 
 5) Model definition:
-      * This model shows that the users need to choose between Student or Runner to use this web application. Then, users need to fill in their personal details in 
-        registration forms that has been devided by the chosen user type by entering Name, Matric Number, IC Number, Age, Email, Kulliyyah and Password. These details
-        are needed so that the users can login only with Matric Number and Password.
+      * This model shows that the users need to fill in their personal details in registration forms that has been devided by the chosen user type by entering Name,
+        Email, and Password. These details are needed so that the users can login only with Matric Number and Password.
 
 ### 4.2 Car Rental
 1) Features and functionality: 
@@ -64,18 +51,21 @@ The following objectives have been proposed for this project:
       
 2) Views: 
       1. car.blade.php
-      2. layouts
-            - master.blade.php
-      3. runnerAccept.blade.php
-      4. cancelBooking.blade.php
+      2. carRental.blade.php
+      3. sview.blade.php
       
 3) Controllers: 
       * rentalController - create, read, update, delete the transportation requests in the database.
 
 4) Routing:
-      * /car - directs the user to car.blade.php (student)
-      * /runnerAccept - directs the user to runnerAccept.blade.php (runner)
-      * /cancelBooking - directs the user to cancelBooking.blade.php (student)
+      * /dashboard - directs the user to dashboard.blade.php (student)
+      * /car - directs the user to car.blade.php (runner)
+      * /acceptRequest - directs the user to carRental.blade.php
+      * /acceptRental - directs the user to car.blade.php
+      * /acceptRental {ID} - directs the user to car.blade.php
+      * /MyRentalOrders - directs user to showRental
+      * /cancelRentalOrder {ID} - directs user to sview.blade.php
+      * /requestCar - directs user to car.blade.php
       
 5) Model definition:   
       * This model for car rental among iium student. Student need to fill in all the required details such as date, the time pick up and the type of cars and it will         nagivate to next page for runner to accept the booking. Student also can cancel booking by delete order before the runner accept the booking. As a runner, only 
@@ -108,32 +98,23 @@ The following objectives have been proposed for this project:
 ### 4.4 Food Delivery
 1) Features and functionality: 
       1. Order food (Student) - Student enters their order details such as delivery address, vendor and what food do they want.
-      2. AcceptOrder (Runner) - Runner can view the details of all food order requests and accept any.
+      2. Accept order (Runner) - Runner can view the details of all food order requests and accept any.
       3. Cancel Request - Student can cancel their request for food as long as no runner have accepted the request.
   
 2) Views: 
       1. orderFood.blade.php
-      2. acceptOrder.blade.php
-      3. myFoodOrders.blade.php
+      2. layouts
+            - master.blade.php
+      3. acceptOrder.blade.php
+      4. myOrders.blade.php
 
 3) Controllers: 
-      * foodController - to create, read, update, delete the food delivery requests in the database.
-      Function list:
-      - index()
-      - store()
-      - show()
-      - showMyOrders()
-      - edit()
-      - update()
-      - destroy()
+      * foodOrderController - to create, read, update, delete the food delivery requests in the database.
 
 4) Routing:
-      * /food - go to index() function
-      * /acceptOrder - go to show() function
-      * /acceptFoodOrder{id} - go to update() function
-      * /MyFoodOrders - go to ShowMyOrders() function
-      * /cancelFoodOrder{id} - go to destroys() function
-      * /makeOrder - go to create() function
+      * /orderfood - directs the user to orderFood.blade.php (only if the user type is 'student')
+      * /myorders - directs the user to myOrders.blade.php (only if the user type is 'student')
+      * /acceptorder - directs the user to acceptOrder.blade.php (only if the user type is 'runner')
       
 5) Model definition:   
       * This model stores all the food delivery requests made by the student. As student, users can create an order for food delivery by filling in the particulars             such as delivery address, vendor and food. After that, the foodOrderController will create a new foodOrder object. The controller will then shows the list of           orders that are yet to be accepted by any runner in the acceptOrder page. This is done by checking the "runnerID" property in the object. Upon accepting, the           runner's name will be inserted into the variable and the order will be removed from the list.
