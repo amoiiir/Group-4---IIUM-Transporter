@@ -102,18 +102,27 @@ The following objectives have been proposed for this project:
   
 2) Views: 
       1. orderFood.blade.php
-      2. layouts
-            - master.blade.php
-      3. acceptOrder.blade.php
-      4. myOrders.blade.php
+      2. acceptOrder.blade.php
+      3. myOrders.blade.php
 
 3) Controllers: 
-      * foodOrderController - to create, read, update, delete the food delivery requests in the database.
+      * foodOrderController - to create, read, update, delete the food delivery requests in the database. Functions :
+      * index()
+      * create()
+      * store()
+      * show()
+      * showMyOrders()
+      * edit()
+      * update()
+      * destroy()
 
 4) Routing:
-      * /orderfood - directs the user to orderFood.blade.php (only if the user type is 'student')
-      * /myorders - directs the user to myOrders.blade.php (only if the user type is 'student')
-      * /acceptorder - directs the user to acceptOrder.blade.php (only if the user type is 'runner')
+      * /food -> index()
+      * /acceptOrder -> show()
+      * /acceptOrder{id} -> update()
+      * /MyFoodOrders -> showMyOrders()
+      * /cancelOrder -> destroy()
+      * makeOrder
       
 5) Model definition:   
       * This model stores all the food delivery requests made by the student. As student, users can create an order for food delivery by filling in the particulars             such as delivery address, vendor and food. After that, the foodOrderController will create a new foodOrder object. The controller will then shows the list of           orders that are yet to be accepted by any runner in the acceptOrder page. This is done by checking the "runnerID" property in the object. Upon accepting, the           runner's name will be inserted into the variable and the order will be removed from the list.
