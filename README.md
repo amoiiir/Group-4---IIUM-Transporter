@@ -108,23 +108,32 @@ The following objectives have been proposed for this project:
 ### 4.4 Food Delivery
 1) Features and functionality: 
       1. Order food (Student) - Student enters their order details such as delivery address, vendor and what food do they want.
-      2. Accept order (Runner) - Runner can view the details of all food order requests and accept any.
+      2. AcceptOrder (Runner) - Runner can view the details of all food order requests and accept any.
       3. Cancel Request - Student can cancel their request for food as long as no runner have accepted the request.
   
 2) Views: 
       1. orderFood.blade.php
-      2. layouts
-            - master.blade.php
-      3. acceptOrder.blade.php
-      4. myOrders.blade.php
+      2. acceptOrder.blade.php
+      3. myFoodOrders.blade.php
 
 3) Controllers: 
-      * foodOrderController - to create, read, update, delete the food delivery requests in the database.
+      * foodController - to create, read, update, delete the food delivery requests in the database.
+      Function list:
+      - index()
+      - store()
+      - show()
+      - showMyOrders()
+      - edit()
+      - update()
+      - destroy()
 
 4) Routing:
-      * /orderfood - directs the user to orderFood.blade.php (only if the user type is 'student')
-      * /myorders - directs the user to myOrders.blade.php (only if the user type is 'student')
-      * /acceptorder - directs the user to acceptOrder.blade.php (only if the user type is 'runner')
+      * /food - go to index() function
+      * /acceptOrder - go to show() function
+      * /acceptFoodOrder{id} - go to update() function
+      * /MyFoodOrders - go to ShowMyOrders() function
+      * /cancelFoodOrder{id} - go to destroys() function
+      * /makeOrder - go to create() function
       
 5) Model definition:   
       * This model stores all the food delivery requests made by the student. As student, users can create an order for food delivery by filling in the particulars             such as delivery address, vendor and food. After that, the foodOrderController will create a new foodOrder object. The controller will then shows the list of           orders that are yet to be accepted by any runner in the acceptOrder page. This is done by checking the "runnerID" property in the object. Upon accepting, the           runner's name will be inserted into the variable and the order will be removed from the list.
