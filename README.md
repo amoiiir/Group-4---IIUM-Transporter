@@ -149,6 +149,14 @@ The following objectives have been proposed for this project:
 
 3) Controllers: 
       * parcelController - use to implement CRUD (Create, Read, Update and Delete) parcel details in the database
+      * index()
+      * create()
+      * store()
+      * show()
+      * showMyOrders()
+      * edit()
+      * update()
+      * destroy()
 
 4) Routing:
       * /acceptParcel -> show()
