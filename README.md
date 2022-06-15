@@ -56,6 +56,14 @@ The following objectives have been proposed for this project:
       
 3) Controllers: 
       * rentalController - create, read, update, delete the transportation requests in the database.
+      * index()
+      * create()
+      * store()
+      * show()
+      * showMyRental()
+      * edit()
+      * update()
+      * destroy()
 
 4) Routing:
       * /dashboard - directs the user to dashboard.blade.php (student)
@@ -135,19 +143,18 @@ The following objectives have been proposed for this project:
       4. Runner view request  (Runner) - Runner can view all the details they required and choose any existing request for delivery.
   
 2) Views: 
-      1. enterDetails.blade.php
-      2. myDetails.blade.php
-      3. layouts
-            * master.blade.php 
-      4. runnerView.blade.php 
+      1. parcel.blade.php
+      2. myOrder.blade.php
+      3. acceptParcel.blade.php
 
 3) Controllers: 
       * parcelController - use to implement CRUD (Create, Read, Update and Delete) parcel details in the database
 
 4) Routing:
-      * /enterDetails - directs user to the enterDetails.blade.php
-      * /myDetails - directs user to the myDetails.blade.php
-      * /runnerView - directs user to the runnerView.blade.php
+      * /acceptParcel -> show()
+      * /myParcelOrder -> showOrder()
+      * /cancelParcelOrder{parcel_id} -> destroy()
+      * /acceptParcelOrder{parcel_id) -> update()
 
 5) Model definition:   
       * The purpose of this model is for students to request existing runner to deliver their parcels directly to them. Users are required to enter their parcelID(tracking number), From (the current location of the parcel), To (The location of the owner) and specify the item. After submitting the form, user will be notify if there is runner to pick up their parcels and it will display all the details inserted by the user from the previous form with the charges.
