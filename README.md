@@ -92,7 +92,7 @@ The following objectives have been proposed for this project:
       4. acceptPickup.blade.php
 
 3) Controllers: 
-      * transportationController - create, read, update, delete the transportation requests in the database.
+      * transportController - create, read, update, delete the transportation requests in the database.
 
 4) Routing:
       * /requestPickup - directs the user to requestPickup.blade.php (student)
